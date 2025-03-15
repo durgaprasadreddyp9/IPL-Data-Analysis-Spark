@@ -31,11 +31,3 @@ This project analyzes **Indian Premier League (IPL) data** using **Apache Spark 
 
 ## 📊 **Sample Analyses & Visualizations**
 
-### **1️⃣ Top 10 Economical Bowlers in Powerplay Overs**
-```sql
-SELECT player_name, AVG(runs_scored) AS avg_runs_per_ball
-FROM ball_by_ball
-WHERE over_id <= 6
-GROUP BY player_name
-ORDER BY avg_runs_per_ball
-LIMIT 10;
